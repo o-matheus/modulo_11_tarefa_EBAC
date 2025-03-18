@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 40px auto;
+}
+
+.menu-container {
+    max-height: 300px;
+    max-width: 1280px;
+    background-color: #E6D5B8;
+}
+
+.logo-container img {
+    max-width: 230px;
+}
+
+.menu-itens {
+    margin: 0;
+}
+
+.menu-itens li {
+    list-style: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #5D4037 ;
+    margin-right: 0.75em;
+    padding: 8px;
+}
+
+.menu-itens li:hover {
+    cursor: pointer;
+    background-color: #E3A56D;
+    border: 1px solid #D9C5A0;
+}
+
+.conteudo-sobre {
+    max-height: 700px;
+    max-width: 1200px;
+}
+
+.texto-sobre {
+    flex-direction: column;
+    max-width: 550px;
+}
+
+.imagem-sobre img {
+    max-width: 550px;
+}
+
+@media screen and (max-width: 640px) {
+    .menu-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        margin: 1em 0;
+    }
+
+    .menu-itens {
+        margin: 0;
+        gap: 15px;
+    }
+
+    .menu-itens li {
+        font-size: 1.2em;
+        margin: 0;
+        padding: 0;
+    }
+
+    .conteudo-sobre {
+        display: block
+    }
+
+    .imagem-sobre img {
+        max-width: 90%;
+    }
+};
+    
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    
+
+};
