@@ -32,11 +32,15 @@ body {
 
 .menu-itens li {
     list-style: none;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #5D4037 ;
     margin-right: 0.75em;
     padding: 8px;
+}
+
+.menu-itens li a {
+    text-decoration: none;
+    color: #5D4037 ;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .menu-itens li:hover {
@@ -46,10 +50,13 @@ body {
 }
 
 .conteudo-sobre,
-.conteudo-loja {
-    max-height: 700px;
+.conteudo-loja,
+.fundo-encomenda,
+footer {
+    max-height: fit-content;
     max-width: 1200px;
 }
+
 
 .texto-sobre {
     flex-direction: column;
@@ -76,6 +83,7 @@ h2 {
     flex-direction: column;
     position: relative;
     align-items: flex-start;
+    margin-bottom: 40px;
 }
 
 .conteudo-loja h2 {
@@ -134,6 +142,12 @@ h2 {
     color: #fff;
 }
 
+footer {
+    border-top: 1px solid #E3A56D;
+    text-align: center;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 640px) {
     .produtos {
         display: flex;
@@ -190,6 +204,28 @@ h2 {
 }
     
 @media screen and (min-width: 641px) and (max-width: 1023px) {
-    
+    .conteudo-sobre {
+        display: block;
+        max-width: 100%;
+        max-height: fit-content;
+        text-align: center;
+    }
 
-};
+    .texto-sobre {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .conteudo-loja{
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .conteudo-loja h2 {
+        text-align: center;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
